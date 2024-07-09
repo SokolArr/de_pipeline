@@ -4,7 +4,7 @@ This is my simple data pipeline as a pet project. Pipeline load some `.csv` file
 Postgres and show some metrics in BI-instrument Superset.\
 Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data?select=olist_products_dataset.csv
 
-## Quick start
+### Quick start
 1. Go to folder 
     ```cmd
     cd de_pipeline
@@ -38,3 +38,7 @@ Macos:
     ```cmd
     docker-compose down
     ```
+
+### About data
+ER diagram
+![ER diagramt](img/ER_diag.png)
