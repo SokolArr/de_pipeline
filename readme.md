@@ -1,7 +1,9 @@
-## Data pipeline
+## Data pipeline. Brazilian E-Commerce Public Dataset by Olist
 ### About
     This is my simple data pipeline as a pet project. Pipeline load some .csv files from kaggle.com using Airflow, 
     Postgres and show some metrics in BI-instrument Superset.
+    
+    https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data?select=olist_products_dataset.csv
 
 ## Quick start
 1. Go to folder 
