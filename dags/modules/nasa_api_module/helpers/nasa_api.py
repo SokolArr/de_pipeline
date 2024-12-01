@@ -9,7 +9,7 @@ my_logger.configure_logger()
 
 class NasaAPI:
     """
-    A class to interact with NASA's free APIs.
+    A class to interact with NASA's free APIs. (https://api.nasa.gov/)
 
     Attributes:
         api_key (str): The key parameter for accessing the API.

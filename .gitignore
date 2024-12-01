@@ -2,9 +2,9 @@
 # /dags
 __pycache__
 /logs
-/plugins
 /source_files/*
 .env
 creds.yaml
 test.*
-.DS_Store
+*.DS_Store
+empty
