@@ -26,7 +26,7 @@ class NasaAPI:
     """
 
     api_links: Dict[str, str] = dict(
-        {"neo": "https://api.nasa.gov/neo/rest/v1/neo/browe", "geo": ""}
+        {"neo": "https://api.nasa.gov/neo/rest/v1/neo/browse", "geo": ""}
     )
     neo_attrs: List[str] = [
         "id",
