@@ -15,11 +15,23 @@ This module provides an interface for interacting with NASA APIs. It simplifies 
 
 ## Usage
 
+### .yaml file with creds
+
+path: `./nasa_api_module/creds.yaml`
+
+```
+main_params:
+  nasa_api_key: "abcz"
+```
+
+### Code
+
 ```python
 from nasa_api_module import NasaAPI
 
 # Initialize API object
-api = NasaAPI("your_api_key")
+api_key = yaml_parser.read_yaml("./nasa_api_module/creds.yaml")["main_params"]["nasa_api_key"]
+api = NasaAPI(api_key)
 
 # Get URL for specific API
 url = api.get_api_link_by_key("neo")
