@@ -5,3 +5,5 @@ __pycache__
 /plugins
 /source_files/*
 .env
+creds.yaml
+test.*
