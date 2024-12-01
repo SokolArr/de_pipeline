@@ -7,3 +7,4 @@ __pycache__
 .env
 creds.yaml
 test.*
+.DS_Store
