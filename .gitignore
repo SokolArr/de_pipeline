@@ -1,10 +1,9 @@
 /config
-# /dags
 __pycache__
 /logs
 /source_files/*
 .env
-creds.yaml
-test.*
+*cred*.yaml
+*test*
 *.DS_Store
 empty
