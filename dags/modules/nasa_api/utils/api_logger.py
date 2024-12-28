@@ -2,7 +2,7 @@ import logging
 from datetime import datetime
 
 
-class MyLogger:
+class ApiLogger:
     def __init__(self, log_level: str = "INFO"):
         self.log_level = log_level.upper()
         self.formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")

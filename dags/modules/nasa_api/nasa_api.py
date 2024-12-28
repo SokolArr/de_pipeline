@@ -1,11 +1,10 @@
 import requests
 from typing import Dict, List
 
-from .my_logger.my_logger import MyLogger
+from .utils.api_logger import ApiLogger
 
-my_logger = MyLogger(log_level="DEBUG")
+my_logger = ApiLogger(log_level="DEBUG")
 my_logger.configure_logger()
-
 
 class NasaAPI:
     """
