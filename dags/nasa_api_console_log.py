@@ -4,19 +4,17 @@ import psycopg2
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.models import Variable, Connection
-from modules.nasa_api_module.helpers.nasa_api import NasaAPI
+from modules.nasa_api.nasa_api import NasaAPI
 
 my_dag = DAG(
-    dag_id="simple_dag",
+    dag_id="nasa_api_console_log",
     start_date=datetime.datetime(2024, 1, 1),
     schedule="@daily",
     catchup=False,
 )
 
-
 def nasa_api_get_data():
-    conn = Connection.get_connection_from_secrets(conn_id="postgres_conn")
-
+    
     api_key = Variable.get("nasa_api_key")
     if api_key:
         nasa_api = NasaAPI(api_key)
