@@ -41,24 +41,6 @@ services:
       start_period: 5s
     restart: always
 
-  postgres-db:
-    image: postgres:13
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: db
-    ports:
-      - "2345:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d db"]
-      interval: 10s
-      timeout: 10s
-      retries: 5
-      start_period: 5s
-    restart: always
-
   redis:
     image: redis:7.2-bookworm
     expose:
